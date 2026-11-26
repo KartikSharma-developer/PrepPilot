@@ -1,0 +1,446 @@
+/* =========================================================
+   INTERVIEW / PRACTICE PAGES
+   ========================================================= */
+
+.setup-page {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 12px 0 48px;
+}
+
+.setup-page > .eyebrow {
+  color: #7c7f89;
+  margin-bottom: 10px;
+}
+
+.setup-page > h1 {
+  margin: 0;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: -1.2px;
+  font-weight: 750;
+}
+
+.setup-page > .subtitle {
+  max-width: 650px;
+  margin: 10px 0 32px;
+  color: #777a84;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   MAIN QUESTION CARD
+   ========================================================= */
+
+.question-card {
+  background: #ffffff;
+  border: 1px solid #e5e6eb;
+  border-radius: 20px;
+  padding: 34px;
+  box-shadow:
+    0 2px 4px rgba(20, 20, 25, 0.02),
+    0 14px 40px rgba(20, 20, 25, 0.06);
+}
+
+.question-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  color: #8a8c95;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.question-top span:last-child {
+  background: #f3f4f6;
+  color: #555861;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.question-skill {
+  display: inline-flex;
+  align-items: center;
+  background: #f1f2f5;
+  color: #4e5159;
+  padding: 7px 11px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 650;
+  margin-bottom: 18px;
+}
+
+.question-card h2 {
+  max-width: 760px;
+  margin: 0 0 28px;
+  font-size: 23px;
+  line-height: 1.45;
+  letter-spacing: -0.3px;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   ANSWER AREA
+   ========================================================= */
+
+.question-card textarea {
+  display: block;
+  width: 100%;
+  min-height: 190px;
+  resize: vertical;
+  border: 1px solid #dedfe5;
+  border-radius: 13px;
+  padding: 17px;
+  background: #fafbfc;
+  color: #17181c;
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 1.6;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.question-card textarea:hover {
+  border-color: #cfd1d8;
+}
+
+.question-card textarea:focus {
+  border-color: #9c9fa8;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(30, 31, 36, 0.05);
+}
+
+.question-card textarea::placeholder {
+  color: #a1a3aa;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.primary-btn {
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.primary-btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(20, 20, 25, 0.16);
+}
+
+.primary-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.primary-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   FEEDBACK
+   ========================================================= */
+
+.feedback-box {
+  border-top: 1px solid #ececf0;
+  padding-top: 28px;
+}
+
+.feedback-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.feedback-header h3 {
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: -0.3px;
+}
+
+.answer-score {
+  width: 76px;
+  height: 76px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border: 6px solid #eeeeef;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #17181c;
+  font-size: 17px;
+  font-weight: 750;
+}
+
+.feedback-good {
+  margin-top: 22px;
+  padding: 17px 18px;
+  border: 1px solid #dfe8e2;
+  border-radius: 12px;
+  background: #f5f8f6;
+  color: #356248;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.feedback-suggestion {
+  margin-top: 12px;
+  padding: 17px 18px;
+  border: 1px solid #e6e7eb;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.feedback-suggestion strong {
+  font-size: 12px;
+}
+
+.feedback-suggestion p {
+  margin: 7px 0 0;
+  color: #73757e;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.feedback-box .primary-btn {
+  margin-top: 20px;
+}
+
+
+/* =========================================================
+   QUESTION PROGRESS
+   ========================================================= */
+
+.interview-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 24px;
+}
+
+.question-dot {
+  width: 32px;
+  height: 32px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e0e1e6;
+  border-radius: 50%;
+  background: #f2f3f5;
+  color: #777982;
+  font-size: 11px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.question-dot.current {
+  border-color: #17181c;
+  background: #17181c;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(20, 20, 25, 0.15);
+}
+
+.question-dot.completed {
+  border-color: #d8e3db;
+  background: #edf4ef;
+  color: #356248;
+}
+
+
+/* =========================================================
+   BACK BUTTON
+   ========================================================= */
+
+.back-btn {
+  border: 0;
+  background: transparent;
+  color: #777982;
+  padding: 9px 0;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 550;
+  transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #17181c;
+}
+
+
+/* =========================================================
+   EVALUATION
+   ========================================================= */
+
+.skill-meter {
+  width: 100%;
+  height: 9px;
+  margin-top: 18px;
+  background: #ececf0;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.skill-meter-fill {
+  height: 100%;
+  background: #b96f2e;
+  border-radius: inherit;
+  transition: width 0.5s ease;
+}
+
+.skill-score {
+  margin-top: 9px;
+  color: #858791;
+  font-size: 11px;
+}
+
+.skill-score strong {
+  color: #17181c;
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   TARGETED PRACTICE
+   ========================================================= */
+
+.setup-page .improvement-card {
+  margin-top: 24px;
+}
+
+.setup-page .improvement-card .primary-btn {
+  max-width: 280px;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 750px) {
+  .setup-page {
+    padding: 5px 0 35px;
+  }
+
+  .setup-page > h1 {
+    font-size: 27px;
+  }
+
+  .question-card {
+    padding: 22px;
+    border-radius: 16px;
+  }
+
+  .question-card h2 {
+    font-size: 19px;
+  }
+
+  .question-card textarea {
+    min-height: 160px;
+  }
+
+  .feedback-header {
+    align-items: flex-start;
+  }
+
+  .answer-score {
+    width: 62px;
+    height: 62px;
+    border-width: 5px;
+    font-size: 14px;
+  }
+}
+
+/* Progress graph styling */
+
+.progress-page {
+  padding-bottom: 40px;
+}
+
+.progress-chart {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.chart-y-axis {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #94a3b8;
+  font-size: 11px;
+  padding-bottom: 5px;
+}
+
+.chart-svg {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.chart-x-axis {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-left: 42px;
+  margin-top: 8px;
+  color: #64748b;
+  font-size: 11px;
+  text-align: center;
+}
+
+.chart-x-axis span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.chart-x-axis strong {
+  color: #6366f1;
+}
+
+.progress-skill {
+  margin-top: 22px;
+}
+
+.progress-skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  font-size: 14px;
+}
+
+.progress-skill-track {
+  height: 10px;
+  background: #e9edf5;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+  .progress-page {
+    padding: 18px;
+  }
+
+  .chart-x-axis {
+    font-size: 9px;
+  }
+}

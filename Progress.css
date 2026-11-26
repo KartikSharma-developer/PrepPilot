@@ -1,0 +1,127 @@
+
+.progress-page {
+  padding: 30px;
+  color: #1e293b;
+}
+
+.progress-header h1 {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.progress-header p,
+.progress-card > p {
+  color: #64748b;
+}
+
+.progress-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.progress-stat-card,
+.progress-card {
+  background: white;
+  padding: 22px;
+  border-radius: 16px;
+  border: 1px solid #e8eaf0;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+.progress-stat-card h3 {
+  color: #6366f1;
+  font-size: 30px;
+  margin: 0 0 8px;
+}
+
+.progress-stat-card p {
+  color: #64748b;
+  margin: 0;
+}
+
+.progress-card {
+  margin-bottom: 22px;
+}
+
+.progress-card h2 {
+  font-size: 19px;
+  margin: 0 0 8px;
+}
+
+.line-chart {
+  display: flex;
+  align-items: stretch;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.chart-y-labels {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.line-chart svg {
+  width: 100%;
+  overflow: visible;
+}
+
+.chart-x-labels {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 42px;
+  color: #94a3b8;
+  font-size: 11px;
+  gap: 5px;
+}
+
+.skill-row {
+  margin-top: 22px;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+  font-size: 14px;
+}
+
+.skill-track {
+  height: 10px;
+  background: #eef0f7;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6);
+  border-radius: 20px;
+}
+
+.improvement-card {
+  background: #f5f3ff;
+  border-color: #e9ddff;
+}
+
+.improvement-card p {
+  line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+  .progress-page {
+    padding: 18px;
+  }
+
+  .progress-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .chart-x-labels {
+    font-size: 9px;
+  }
+}
